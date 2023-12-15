@@ -60,3 +60,4 @@ You can follow same procedure in the official  AWS document [Getting started wit
    kubectl get nodes
    kubectl run pod tomcat --image=tomcat 
    ```
+
