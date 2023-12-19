@@ -1,0 +1,51 @@
+###### commands ################################
+
+------------------------- pods ---------------------------------------------------------------
+
+kubect apply -f pod <.yaml>
+
+kubectl get pods
+
+kubectl get pods -o wide    # to see the 
+
+kubectl delete pod <pod name>
+
+kubectl describe pods <name of the pod>  # to know more details about pod 
+
+
+
+--------------------- replicacontrol------------------------------------------------------
+
+kubectl create -f <.yaml file>
+
+kubectl get rc
+
+kubectl replace -f <.yaml file>   #if we want to change rplicas methode-1
+
+kubectl scale --replicas=6 -f <.yaml> # if we want to change rplicas method-2
+
+
+kubectl delete rc <.yaml>
+
+-------------------------replicaset ----------------------------------------------------------
+
+kubectl create -f <.yaml>
+
+kubectl get rs
+
+kubectl get pods 
+
+kubectl replace -f <.yaml>   #if we want to change rplicas methode-1
+
+kubectl scale --replicas=4 -f <.yaml> # if we want to change rplicas method-2
+
+kubectl scale --replicas=5 replicaset <name of your replica set>
+
+kubectl delete rs <.yaml>
+
+
+
+
+
+
+
