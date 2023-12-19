@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  namespace: tuesday
+  labels:
+      app: webapp
+      type: front-end
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
