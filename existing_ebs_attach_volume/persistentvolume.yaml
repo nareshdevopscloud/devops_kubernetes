@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pvolume
+spec:
+  accessModes:
+  - ReadWriteOnce
+  awsElasticBlockStore:
+    fsType: xfs
+    volumeID: aws://ap-south-1a/vol-0a6d4cbf1912cea25
+  capacity:
+    storage: 1Gi
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: gp2-retain
+  volumeMode: Filesystem
